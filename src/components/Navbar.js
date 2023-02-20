@@ -1,14 +1,26 @@
 import React from "react";
-import Logo from "../../public/images/logo.png";
+import "../styles/navbar.css";
+import Logo from "../images/logo.png";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <Nav>
-      <NavLink to="/">
-        <img src={Logo} />
-      </NavLink>
-    </Nav>
+    <nav className="nav-bar">
+      <ul>
+        <li>
+          <img src={Logo} alt="logo" className="logo" />
+        </li>
+        <li>
+          <a href="/">Surreal Estate</a>
+        </li>
+        <li>
+          <a href="/">View Properties</a>
+        </li>
+        <li>
+          <a href="/">Add Properties</a>
+        </li>
+      </ul>
+    </nav>
   );
 };
 
-export default Navbar;
+export default NavBar;
