@@ -5,22 +5,22 @@ import Logo from "../images/logo.png";
 
 const NavBar = () => {
   return (
-    <nav className="nav-bar">
-      <ul>
-        <li className="nav-elements">
+    <nav>
+      <ul className="nav-bar">
+        <li className="nav-logo">
           <img src={Logo} alt="logo" className="logo" />
         </li>
-        <li>
+        <li className="nav-element">
           <Link className="item" to="/">
             Surreal Estate
           </Link>
         </li>
-        <li className="nav-elements">
+        <li className="nav-element">
           <Link className="item" to="/">
             View Properties
           </Link>
         </li>
-        <li className="nav-elements">
+        <li className="nav-element">
           <Link className="item" to="/add-properties">
             Add Properties
           </Link>

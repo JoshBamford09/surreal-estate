@@ -27,9 +27,10 @@ const AddProperties = () => {
 
   return (
     <div className="add-property">
-      <form onSubmit={handleAddProperty}>
-        <label htmlFor="title">
-          Title
+      <h2>Add your property below</h2>
+      <form onSubmit={handleAddProperty} className="add-property-form">
+        <label htmlFor="title" className="form-item">
+          Title:
           <input
             placeholder="3 Bed Flat"
             id="title"
@@ -38,7 +39,8 @@ const AddProperties = () => {
             onChange={handleFieldChange}
           />
         </label>
-        <label htmlFor="city">
+        <label htmlFor="city" className="form-item">
+          City:
           <select
             id="city"
             name="city"
@@ -52,7 +54,8 @@ const AddProperties = () => {
           </select>
         </label>
 
-        <label htmlFor="type">
+        <label htmlFor="type" className="form-item">
+          Type:
           <select
             id="type"
             name="type"
@@ -69,8 +72,8 @@ const AddProperties = () => {
           </select>
         </label>
 
-        <label htmlFor="bedrooms">
-          Bedrooms
+        <label htmlFor="bedrooms" className="form-item">
+          Bedrooms:
           <input
             placeholder="0"
             id="bedrooms"
@@ -80,8 +83,8 @@ const AddProperties = () => {
           />
         </label>
 
-        <label htmlFor="bathrroms">
-          Bathrooms
+        <label htmlFor="bathrroms" className="form-item">
+          Bathrooms:
           <input
             placeholder="0"
             id="bathrooms"
@@ -91,10 +94,10 @@ const AddProperties = () => {
           />
         </label>
 
-        <label htmlFor="price">
-          Price
+        <label htmlFor="price" className="form-item">
+          Price:
           <input
-            placeholder="Only use numbers"
+            placeholder="Numbers only"
             id="price"
             name="price"
             value={fields.price}
@@ -102,8 +105,8 @@ const AddProperties = () => {
           />
         </label>
 
-        <label htmlFor="email">
-          Email
+        <label htmlFor="email" className="form-item">
+          Email:
           <input
             placeholder="joe.blogs@surrealestate.co.uk"
             id="email"
